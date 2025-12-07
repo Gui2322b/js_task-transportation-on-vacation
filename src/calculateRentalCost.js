@@ -13,7 +13,7 @@ function calculateRentalCost(days) {
   const totalAmount = amountDay * totalDays
 
   if(totalDays >= 7) return totalAmount - firstDisc
-  if(totalDays >= 3 || totalAmount < 7) return totalAmount - secDisc
+  if(totalDays >= 3) return totalAmount - secDisc
   return totalAmount
 }
 
